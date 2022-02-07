@@ -1,0 +1,107 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="1579054350" file="C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\GUI\SegmentCellsExtractCalciumSignalingStats.prj" location="C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\GUI" name="SegmentCellsExtractCalciumSignalingStats" target="target.mlapps" target-name="Package App">
+    <param.appname>SegmentCellsExtractCalciumSignalingStats</param.appname>
+    <param.authnamewatermark>Elvis Pandzic</param.authnamewatermark>
+    <param.email>e.pandzic@unsw.edu.au</param.email>
+    <param.company>Katharina Gaus Light Microscopy Facility</param.company>
+    <param.icon>${PROJECT_ROOT}\SegmentCellsExtractCalciumSignalingStats_resources\icon_24.png</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}\SegmentCellsExtractCalciumSignalingStats_resources\icon_48.png</file>
+      <file>${PROJECT_ROOT}\SegmentCellsExtractCalciumSignalingStats_resources\icon_24.png</file>
+      <file>${PROJECT_ROOT}\SegmentCellsExtractCalciumSignalingStats_resources\icon_16.png</file>
+    </param.icons>
+    <param.summary>This GUI allows user to segment cells from acquired with low mag lens and extract the statistics of Ca2+ signaling per cell.</param.summary>
+    <param.description>This GUI is designed to segment data acquired on low magnification lens containing several hundreds of cell per FOV. The Ca2+ signaling stats, on per cell basis are extracted and saved. The segmentation is done via watershed and cell centers as well as overal cell mask area are used to enhance segmentation. The average Ca2+ signals in time, per cell, are used to extract amplitude/time occurance/width of Ca2+ events. User can apply peak finding function on raw average intensity or detrended, with few search parameters flexibility.</param.description>
+    <param.screenshot />
+    <param.version>3.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>02e6750d-88aa-455d-b8eb-b17fa2bb98c3</param.guid>
+    <unset>
+      <param.screenshot />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\SegmentCellsExtractCalciumSignalingStatsV3.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\GetOMEData.m</file>
+      <file>${PROJECT_ROOT}\readOMEAlternativeGUI.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\moving_average.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\nansum.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\particle_pretracking_and_tracking_and_2D_feature_finding\pkfnd.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\smoothSeries.m</file>
+    </fileset.depfun>
+    <fileset.resources>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\bfmatlab</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r" name="GUI" optional="false">C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\GUI</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2020b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
